@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628C1A0714F300E40E25 /* AppDelegate.swift */; };
+		30DC628F1A0714F300E40E25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628E1A0714F300E40E25 /* ViewController.swift */; };
+		30DC62921A0714F300E40E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62901A0714F300E40E25 /* Main.storyboard */; };
+		30DC62941A0714F300E40E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62931A0714F300E40E25 /* Images.xcassets */; };
+		30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62951A0714F300E40E25 /* LaunchScreen.xib */; };
+		30DC62A31A0714F300E40E25 /* DualsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC62A21A0714F300E40E25 /* DualsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30DC629D1A0714F300E40E25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30DC627F1A0714F300E40E25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30DC62861A0714F300E40E25;
+			remoteInfo = Duals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30DC62871A0714F300E40E25 /* Duals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DC628B1A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DC628C1A0714F300E40E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30DC628E1A0714F300E40E25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30DC62911A0714F300E40E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30DC62931A0714F300E40E25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		30DC62961A0714F300E40E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		30DC629C1A0714F300E40E25 /* DualsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DC62A11A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DC62A21A0714F300E40E25 /* DualsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30DC62841A0714F300E40E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DC62991A0714F300E40E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30DC627E1A0714F300E40E25 = {
+			isa = PBXGroup;
+			children = (
+				30DC62891A0714F300E40E25 /* Duals */,
+				30DC629F1A0714F300E40E25 /* DualsTests */,
+				30DC62881A0714F300E40E25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30DC62881A0714F300E40E25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30DC62871A0714F300E40E25 /* Duals.app */,
+				30DC629C1A0714F300E40E25 /* DualsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30DC62891A0714F300E40E25 /* Duals */ = {
+			isa = PBXGroup;
+			children = (
+				30DC62AC1A07160F00E40E25 /* Resources */,
+				30DC628C1A0714F300E40E25 /* AppDelegate.swift */,
+				30DC628E1A0714F300E40E25 /* ViewController.swift */,
+				30DC628A1A0714F300E40E25 /* Supporting Files */,
+			);
+			path = Duals;
+			sourceTree = "<group>";
+		};
+		30DC628A1A0714F300E40E25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30DC628B1A0714F300E40E25 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30DC629F1A0714F300E40E25 /* DualsTests */ = {
+			isa = PBXGroup;
+			children = (
+				30DC62A21A0714F300E40E25 /* DualsTests.swift */,
+				30DC62A01A0714F300E40E25 /* Supporting Files */,
+			);
+			path = DualsTests;
+			sourceTree = "<group>";
+		};
+		30DC62A01A0714F300E40E25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30DC62A11A0714F300E40E25 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30DC62AC1A07160F00E40E25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30DC62901A0714F300E40E25 /* Main.storyboard */,
+				30DC62931A0714F300E40E25 /* Images.xcassets */,
+				30DC62951A0714F300E40E25 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30DC62861A0714F300E40E25 /* Duals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30DC62A61A0714F300E40E25 /* Build configuration list for PBXNativeTarget "Duals" */;
+			buildPhases = (
+				30DC62831A0714F300E40E25 /* Sources */,
+				30DC62841A0714F300E40E25 /* Frameworks */,
+				30DC62851A0714F300E40E25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Duals;
+			productName = Duals;
+			productReference = 30DC62871A0714F300E40E25 /* Duals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30DC629B1A0714F300E40E25 /* DualsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30DC62A91A0714F300E40E25 /* Build configuration list for PBXNativeTarget "DualsTests" */;
+			buildPhases = (
+				30DC62981A0714F300E40E25 /* Sources */,
+				30DC62991A0714F300E40E25 /* Frameworks */,
+				30DC629A1A0714F300E40E25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30DC629E1A0714F300E40E25 /* PBXTargetDependency */,
+			);
+			name = DualsTests;
+			productName = DualsTests;
+			productReference = 30DC629C1A0714F300E40E25 /* DualsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30DC627F1A0714F300E40E25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = noelcurtis;
+				TargetAttributes = {
+					30DC62861A0714F300E40E25 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					30DC629B1A0714F300E40E25 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 30DC62861A0714F300E40E25;
+					};
+				};
+			};
+			buildConfigurationList = 30DC62821A0714F300E40E25 /* Build configuration list for PBXProject "Duals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30DC627E1A0714F300E40E25;
+			productRefGroup = 30DC62881A0714F300E40E25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30DC62861A0714F300E40E25 /* Duals */,
+				30DC629B1A0714F300E40E25 /* DualsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30DC62851A0714F300E40E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DC62921A0714F300E40E25 /* Main.storyboard in Resources */,
+				30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */,
+				30DC62941A0714F300E40E25 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DC629A1A0714F300E40E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30DC62831A0714F300E40E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DC628F1A0714F300E40E25 /* ViewController.swift in Sources */,
+				30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DC62981A0714F300E40E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DC62A31A0714F300E40E25 /* DualsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30DC629E1A0714F300E40E25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30DC62861A0714F300E40E25 /* Duals */;
+			targetProxy = 30DC629D1A0714F300E40E25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30DC62901A0714F300E40E25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30DC62911A0714F300E40E25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30DC62951A0714F300E40E25 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30DC62961A0714F300E40E25 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30DC62A41A0714F300E40E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30DC62A51A0714F300E40E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30DC62A71A0714F300E40E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Duals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30DC62A81A0714F300E40E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Duals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30DC62AA1A0714F300E40E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DualsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duals.app/Duals";
+			};
+			name = Debug;
+		};
+		30DC62AB1A0714F300E40E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DualsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duals.app/Duals";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30DC62821A0714F300E40E25 /* Build configuration list for PBXProject "Duals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DC62A41A0714F300E40E25 /* Debug */,
+				30DC62A51A0714F300E40E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30DC62A61A0714F300E40E25 /* Build configuration list for PBXNativeTarget "Duals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DC62A71A0714F300E40E25 /* Debug */,
+				30DC62A81A0714F300E40E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30DC62A91A0714F300E40E25 /* Build configuration list for PBXNativeTarget "DualsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DC62AA1A0714F300E40E25 /* Debug */,
+				30DC62AB1A0714F300E40E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30DC627F1A0714F300E40E25 /* Project object */;
+}
