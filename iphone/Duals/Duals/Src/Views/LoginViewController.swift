@@ -25,10 +25,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-//        return UIStatusBarStyle.LightContent
-//    }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
         println("email: \(emailAddressTextField.text), password: \(passwordTextField.text)")
