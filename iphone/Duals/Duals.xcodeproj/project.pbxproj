@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628C1A0714F300E40E25 /* AppDelegate.swift */; };
-		30DC628F1A0714F300E40E25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628E1A0714F300E40E25 /* ViewController.swift */; };
 		30DC62921A0714F300E40E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62901A0714F300E40E25 /* Main.storyboard */; };
 		30DC62941A0714F300E40E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62931A0714F300E40E25 /* Images.xcassets */; };
 		30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62951A0714F300E40E25 /* LaunchScreen.xib */; };
 		30DC62A31A0714F300E40E25 /* DualsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC62A21A0714F300E40E25 /* DualsTests.swift */; };
+		30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4961A0873F200139D7D /* LoginViewController.swift */; };
+		30E2D4991A087FF900139D7D /* DUSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		30DC62871A0714F300E40E25 /* Duals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC628B1A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DC628C1A0714F300E40E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30DC628E1A0714F300E40E25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30DC62911A0714F300E40E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30DC62931A0714F300E40E25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		30DC62961A0714F300E40E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		30DC629C1A0714F300E40E25 /* DualsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC62A11A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DC62A21A0714F300E40E25 /* DualsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualsTests.swift; sourceTree = "<group>"; };
+		30E2D4961A0873F200139D7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Src/Views/LoginViewController.swift; sourceTree = "<group>"; };
+		30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DUSummaryViewController.swift; path = Src/Views/DUSummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,9 @@
 		30DC62891A0714F300E40E25 /* Duals */ = {
 			isa = PBXGroup;
 			children = (
+				30E2D4941A0873A300139D7D /* Src */,
 				30DC62AC1A07160F00E40E25 /* Resources */,
 				30DC628C1A0714F300E40E25 /* AppDelegate.swift */,
-				30DC628E1A0714F300E40E25 /* ViewController.swift */,
 				30DC628A1A0714F300E40E25 /* Supporting Files */,
 			);
 			path = Duals;
@@ -118,6 +120,23 @@
 				30DC62951A0714F300E40E25 /* LaunchScreen.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		30E2D4941A0873A300139D7D /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				30E2D4951A0873AA00139D7D /* Views */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		30E2D4951A0873AA00139D7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30E2D4961A0873F200139D7D /* LoginViewController.swift */,
+				30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30DC628F1A0714F300E40E25 /* ViewController.swift in Sources */,
+				30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */,
 				30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */,
+				30E2D4991A087FF900139D7D /* DUSummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +433,7 @@
 				30DC62A81A0714F300E40E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30DC62A91A0714F300E40E25 /* Build configuration list for PBXNativeTarget "DualsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +442,7 @@
 				30DC62AB1A0714F300E40E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

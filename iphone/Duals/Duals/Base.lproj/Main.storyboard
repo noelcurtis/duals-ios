@@ -4,22 +4,135 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Duals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="Duals" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-9R-8dG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vON-pI-8HL">
+                                <rect key="frame" x="0.0" y="0.0" width="384" height="674"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCy-gE-GbH">
+                                        <rect key="frame" x="65" y="413" width="255" height="44"/>
+                                        <state key="normal" image="create account">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-4F-poP">
+                                        <rect key="frame" x="65" y="338" width="255" height="44"/>
+                                        <state key="normal" image="log in">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Rectangle 3 + Oval 1 + fa-envelope 3" translatesAutoresizingMaskIntoConstraints="NO" id="xEb-3Z-m06">
+                                        <rect key="frame" x="67" y="188" width="251" height="40"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Rectangle 2 + Oval 2 + fa-lock 2" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-R4-vYI">
+                                        <rect key="frame" x="67" y="263" width="251" height="40"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="loginTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Lfc-hr-Sp4">
+                                        <rect key="frame" x="136" y="113" width="113" height="47"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BuH-G0-FtQ">
+                                        <rect key="frame" x="116" y="193" width="194" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SvT-lg-7I2">
+                                        <rect key="frame" x="116" y="268" width="194" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-vB-SFC">
+                                        <rect key="frame" x="65" y="338" width="255" height="44"/>
+                                        <state key="normal" image="log in">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gQb-c9-QDh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="createAccountButton" destination="XCy-gE-GbH" id="rMZ-7m-H4N"/>
+                        <outlet property="emailAddressTextField" destination="BuH-G0-FtQ" id="aYg-1G-1h8"/>
+                        <outlet property="loginButton" destination="7rd-4F-poP" id="Y9F-03-WqB"/>
+                        <outlet property="passwordTextField" destination="SvT-lg-7I2" id="4Sz-t1-2Kc"/>
+                        <outlet property="scrollView" destination="vON-pI-8HL" id="3vy-kb-r4s"/>
+                        <segue destination="s01-Xl-QSv" kind="showDetail" identifier="loginToSummaryScreen" id="gfE-XM-4Q6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="7.5" y="390.5"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="p36-ez-5eA">
+            <objects>
+                <viewController id="4Ma-Vw-erl" customClass="DUSummaryViewController" customModule="Duals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="41x-t0-j0O"/>
+                        <viewControllerLayoutGuide type="bottom" id="U1G-0l-OFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PHw-lk-5vb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="ZG9-cH-oxJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dRG-xb-YWH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arn-43-Uim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5" y="390.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yzg-Xc-jYf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s01-Xl-QSv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZGA-OR-PL1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Ma-Vw-erl" kind="relationship" relationship="rootViewController" id="PSq-dj-QYe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei3-oz-o23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524.5" y="390.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rectangle 1" width="375" height="667"/>
+        <image name="Rectangle 2 + Oval 2 + fa-lock 2" width="251" height="40"/>
+        <image name="Rectangle 3 + Oval 1 + fa-envelope 3" width="251" height="40"/>
+        <image name="background" width="375" height="667"/>
+        <image name="create account" width="255" height="44"/>
+        <image name="log in" width="256" height="44"/>
+        <image name="loginTitle" width="113" height="47"/>
+    </resources>
 </document>
