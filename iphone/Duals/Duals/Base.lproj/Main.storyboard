@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="Duals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="vXZ-lx-hvc" customClass="LoginViewController" customModule="Duals" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -74,12 +74,12 @@
                         <outlet property="loginButton" destination="7rd-4F-poP" id="Y9F-03-WqB"/>
                         <outlet property="passwordTextField" destination="SvT-lg-7I2" id="4Sz-t1-2Kc"/>
                         <outlet property="scrollView" destination="vON-pI-8HL" id="3vy-kb-r4s"/>
-                        <segue destination="s01-Xl-QSv" kind="showDetail" identifier="loginToSummaryScreen" id="gfE-XM-4Q6"/>
+                        <segue destination="s01-Xl-QSv" kind="modal" identifier="loginToSummaryScreen" modalTransitionStyle="flipHorizontal" id="gfE-XM-4Q6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7.5" y="390.5"/>
+            <point key="canvasLocation" x="4" y="369.67333333333335"/>
         </scene>
         <!--Summary View Controller-->
         <scene sceneID="p36-ez-5eA">
@@ -90,7 +90,7 @@
                         <viewControllerLayoutGuide type="bottom" id="U1G-0l-OFb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PHw-lk-5vb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="ZG9-cH-oxJ">
@@ -104,13 +104,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arn-43-Uim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111.5" y="390.5"/>
+            <point key="canvasLocation" x="1005.5" y="369.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yzg-Xc-jYf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s01-Xl-QSv" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZGA-OR-PL1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -123,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ei3-oz-o23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524.5" y="390.5"/>
+            <point key="canvasLocation" x="505.5" y="369.5"/>
         </scene>
     </scenes>
     <resources>
@@ -135,4 +136,9 @@
         <image name="log in" width="256" height="44"/>
         <image name="loginTitle" width="113" height="47"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
