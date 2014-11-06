@@ -1,0 +1,3 @@
+[submodule "iphone/Duals/Frameworks/Alamofire"]
+	path = iphone/Duals/Frameworks/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git

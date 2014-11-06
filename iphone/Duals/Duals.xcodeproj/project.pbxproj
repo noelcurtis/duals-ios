@@ -7,16 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301D34DA1A0F36B2009004EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D34D91A0F36B2009004EA /* SwiftyJSON.swift */; };
+		305092761A0B20E8004DF9C9 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 305092701A0B1E1D004DF9C9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		305092781A0B251B004DF9C9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092771A0B251B004DF9C9 /* Router.swift */; };
+		3050927A1A0B2B3E004DF9C9 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092791A0B2B3E004DF9C9 /* RouterTests.swift */; };
+		305092811A0B316F004DF9C9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092771A0B251B004DF9C9 /* Router.swift */; };
+		305092841A0B3742004DF9C9 /* DualsHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092831A0B3742004DF9C9 /* DualsHttpClient.swift */; };
+		305092891A0B3EEF004DF9C9 /* DualsHttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */; };
+		306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
+		306D45BD1A11B05C0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
 		30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628C1A0714F300E40E25 /* AppDelegate.swift */; };
 		30DC62921A0714F300E40E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62901A0714F300E40E25 /* Main.storyboard */; };
 		30DC62941A0714F300E40E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62931A0714F300E40E25 /* Images.xcassets */; };
 		30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62951A0714F300E40E25 /* LaunchScreen.xib */; };
-		30DC62A31A0714F300E40E25 /* DualsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC62A21A0714F300E40E25 /* DualsTests.swift */; };
 		30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4961A0873F200139D7D /* LoginViewController.swift */; };
 		30E2D4991A087FF900139D7D /* DUSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */; };
+		30FD987B1A0FC3D400610205 /* DualsHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092831A0B3742004DF9C9 /* DualsHttpClient.swift */; };
+		30FD987D1A0FF61A00610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
+		30FD987E1A0FF70000610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
+		30FD987F1A0FF71A00610205 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D34D91A0F36B2009004EA /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3050926F1A0B1E1D004DF9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		305092711A0B1E1D004DF9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		305092731A0B2081004DF9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 		30DC629D1A0714F300E40E25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 30DC627F1A0714F300E40E25 /* Project object */;
@@ -26,7 +59,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		305092751A0B20C1004DF9C9 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				305092761A0B20E8004DF9C9 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		301D34D91A0F36B2009004EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Frameworks/SwiftlyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		305092771A0B251B004DF9C9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Src/Services/Router.swift; sourceTree = "<group>"; };
+		305092791A0B2B3E004DF9C9 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		305092831A0B3742004DF9C9 /* DualsHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClient.swift; path = Src/Services/DualsHttpClient.swift; sourceTree = "<group>"; };
+		305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualsHttpClientTests.swift; sourceTree = "<group>"; };
+		306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClientError.swift; path = Src/Models/DualsHttpClientError.swift; sourceTree = "<group>"; };
 		30DC62871A0714F300E40E25 /* Duals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC628B1A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DC628C1A0714F300E40E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +89,9 @@
 		30DC62961A0714F300E40E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		30DC629C1A0714F300E40E25 /* DualsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC62A11A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30DC62A21A0714F300E40E25 /* DualsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualsTests.swift; sourceTree = "<group>"; };
 		30E2D4961A0873F200139D7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Src/Views/LoginViewController.swift; sourceTree = "<group>"; };
 		30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DUSummaryViewController.swift; path = Src/Views/DUSummaryViewController.swift; sourceTree = "<group>"; };
+		30FD987C1A0FF61A00610205 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Src/Models/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +112,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305092691A0B1DFC004DF9C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				301D34D91A0F36B2009004EA /* SwiftyJSON.swift */,
+				3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3050926B1A0B1E1C004DF9C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305092701A0B1E1D004DF9C9 /* Alamofire.framework */,
+				305092721A0B1E1D004DF9C9 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305092821A0B3706004DF9C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				305092771A0B251B004DF9C9 /* Router.swift */,
+				305092831A0B3742004DF9C9 /* DualsHttpClient.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		305092851A0B3978004DF9C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30FD987C1A0FF61A00610205 /* User.swift */,
+				306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		30DC627E1A0714F300E40E25 = {
 			isa = PBXGroup;
 			children = (
 				30DC62891A0714F300E40E25 /* Duals */,
 				30DC629F1A0714F300E40E25 /* DualsTests */,
 				30DC62881A0714F300E40E25 /* Products */,
+				305092691A0B1DFC004DF9C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +189,8 @@
 		30DC629F1A0714F300E40E25 /* DualsTests */ = {
 			isa = PBXGroup;
 			children = (
-				30DC62A21A0714F300E40E25 /* DualsTests.swift */,
+				305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */,
+				305092791A0B2B3E004DF9C9 /* RouterTests.swift */,
 				30DC62A01A0714F300E40E25 /* Supporting Files */,
 			);
 			path = DualsTests;
@@ -125,6 +217,8 @@
 		30E2D4941A0873A300139D7D /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				305092851A0B3978004DF9C9 /* Models */,
+				305092821A0B3706004DF9C9 /* Services */,
 				30E2D4951A0873AA00139D7D /* Views */,
 			);
 			name = Src;
@@ -149,10 +243,12 @@
 				30DC62831A0714F300E40E25 /* Sources */,
 				30DC62841A0714F300E40E25 /* Frameworks */,
 				30DC62851A0714F300E40E25 /* Resources */,
+				305092751A0B20C1004DF9C9 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				305092741A0B2081004DF9C9 /* PBXTargetDependency */,
 			);
 			name = Duals;
 			productName = Duals;
@@ -206,6 +302,12 @@
 			mainGroup = 30DC627E1A0714F300E40E25;
 			productRefGroup = 30DC62881A0714F300E40E25 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3050926B1A0B1E1C004DF9C9 /* Products */;
+					ProjectRef = 3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				30DC62861A0714F300E40E25 /* Duals */,
@@ -213,6 +315,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		305092701A0B1E1D004DF9C9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3050926F1A0B1E1D004DF9C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		305092721A0B1E1D004DF9C9 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 305092711A0B1E1D004DF9C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		30DC62851A0714F300E40E25 /* Resources */ = {
@@ -239,9 +358,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305092841A0B3742004DF9C9 /* DualsHttpClient.swift in Sources */,
+				305092781A0B251B004DF9C9 /* Router.swift in Sources */,
 				30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */,
 				30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */,
+				301D34DA1A0F36B2009004EA /* SwiftyJSON.swift in Sources */,
 				30E2D4991A087FF900139D7D /* DUSummaryViewController.swift in Sources */,
+				30FD987D1A0FF61A00610205 /* User.swift in Sources */,
+				306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,13 +373,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30DC62A31A0714F300E40E25 /* DualsTests.swift in Sources */,
+				305092891A0B3EEF004DF9C9 /* DualsHttpClientTests.swift in Sources */,
+				3050927A1A0B2B3E004DF9C9 /* RouterTests.swift in Sources */,
+				30FD987E1A0FF70000610205 /* User.swift in Sources */,
+				305092811A0B316F004DF9C9 /* Router.swift in Sources */,
+				30FD987B1A0FC3D400610205 /* DualsHttpClient.swift in Sources */,
+				30FD987F1A0FF71A00610205 /* SwiftyJSON.swift in Sources */,
+				306D45BD1A11B05C0048690C /* DualsHttpClientError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		305092741A0B2081004DF9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 305092731A0B2081004DF9C9 /* PBXContainerItemProxy */;
+		};
 		30DC629E1A0714F300E40E25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 30DC62861A0714F300E40E25 /* Duals */;
