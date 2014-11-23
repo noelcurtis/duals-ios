@@ -10,8 +10,19 @@ import Foundation
 
 class DualsHttpClientError {
     let message: String
+    let code: Int
     
-    init(message: String) {
+    init(jsonError: JSON) {
+        self.message = jsonError["message"].stringValue
+        if let errorCode: Int = jsonError["code"].int {
+            self.code = errorCode
+        } else {
+            self.code = 0
+        }
+    }
+    
+    init(message: String, code: Int) {
         self.message = message
+        self.code = code
     }
 }

@@ -19,7 +19,7 @@ class DualsHttpClient {
                 // check for an error
                 if let error:String = parsedUser["error"].string {
                     println("Error signing up: \(error)")
-                    let clientError = DualsHttpClientError(message: error)
+                    let clientError = DualsHttpClientError(jsonError: parsedUser)
                     completionHandler(user: nil, error: clientError)
                 } else {
                     let user = User(jsonUser: parsedUser)
@@ -27,7 +27,7 @@ class DualsHttpClient {
                 }
             } else {
                 println("Error: \(error?.description)")
-                completionHandler(user: nil, error: DualsHttpClientError(message: "Could not complete request please try again."))
+                completionHandler(user: nil, error: DualsHttpClientError(message: "Could not complete request please try again.", code: 999))
             }
         }
     }
@@ -40,7 +40,7 @@ class DualsHttpClient {
                 // check for an error
                 if let error:String = parsedUser["error"].string {
                     println("Error authenticating: \(error)")
-                    let clientError = DualsHttpClientError(message: error)
+                    let clientError = DualsHttpClientError(jsonError: parsedUser)
                     completionHandler(user: nil, error: clientError)
                 } else {
                     let user = User(jsonUser: parsedUser)
@@ -50,7 +50,7 @@ class DualsHttpClient {
                 }
             } else {
                 println("Error: \(error?.description)")
-                completionHandler(user: nil, error: DualsHttpClientError(message: "Could not complete request please try again."))
+                completionHandler(user: nil, error: DualsHttpClientError(message: "Could not complete request please try again.", code: 999))
             }
         }
     }
