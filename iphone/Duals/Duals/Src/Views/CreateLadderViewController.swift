@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class CreateLadderViewController: UIViewController {
+class CreateLadderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var cancelButton: UIBarButtonItem!
     var checkButton: UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,5 +50,26 @@ class CreateLadderViewController: UIViewController {
     func dismissView() {
         self.dismissViewControllerAnimated(true, completion: {});
     }
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    // MARK: - UITableViewDatasource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if (indexPath.row == 0) {
+            return self.tableView.dequeueReusableCellWithIdentifier("nameInputCell") as UITableViewCell
+        } else {
+            return self.tableView.dequeueReusableCellWithIdentifier("activityInputCell") as UITableViewCell
+        }
+    }
+    
 
 }
