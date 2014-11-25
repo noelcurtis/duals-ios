@@ -18,6 +18,7 @@
 		306D45BD1A11B05C0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
 		30D5FF211A23FD9400B167B7 /* CreateLadderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */; };
 		30D5FF241A24009F00B167B7 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF231A24009F00B167B7 /* SummaryViewController.swift */; };
+		30D5FF291A24BBA300B167B7 /* CreateLadderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */; };
 		30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628C1A0714F300E40E25 /* AppDelegate.swift */; };
 		30DC62921A0714F300E40E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62901A0714F300E40E25 /* Main.storyboard */; };
 		30DC62941A0714F300E40E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62931A0714F300E40E25 /* Images.xcassets */; };
@@ -84,6 +85,7 @@
 		306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClientError.swift; path = Src/Models/DualsHttpClientError.swift; sourceTree = "<group>"; };
 		30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateLadderViewController.swift; path = Src/Views/CreateLadderViewController.swift; sourceTree = "<group>"; };
 		30D5FF231A24009F00B167B7 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummaryViewController.swift; path = Src/Views/SummaryViewController.swift; sourceTree = "<group>"; };
+		30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateLadderCell.swift; path = Src/Views/CreateLadderCell.swift; sourceTree = "<group>"; };
 		30DC62871A0714F300E40E25 /* Duals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC628B1A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DC628C1A0714F300E40E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				30D5FF231A24009F00B167B7 /* SummaryViewController.swift */,
 				30E2D4961A0873F200139D7D /* LoginViewController.swift */,
 				30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */,
+				30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */,
 				30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */,
 				30D5FF211A23FD9400B167B7 /* CreateLadderViewController.swift in Sources */,
+				30D5FF291A24BBA300B167B7 /* CreateLadderCell.swift in Sources */,
 				301D34DA1A0F36B2009004EA /* SwiftyJSON.swift in Sources */,
 				30FD987D1A0FF61A00610205 /* User.swift in Sources */,
 				306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */,
