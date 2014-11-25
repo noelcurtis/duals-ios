@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DUSummaryViewController: UIViewController {
+class SummaryViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()

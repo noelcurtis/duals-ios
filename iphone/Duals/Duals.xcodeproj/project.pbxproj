@@ -16,12 +16,13 @@
 		305092891A0B3EEF004DF9C9 /* DualsHttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */; };
 		306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
 		306D45BD1A11B05C0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
+		30D5FF211A23FD9400B167B7 /* CreateLadderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */; };
+		30D5FF241A24009F00B167B7 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF231A24009F00B167B7 /* SummaryViewController.swift */; };
 		30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC628C1A0714F300E40E25 /* AppDelegate.swift */; };
 		30DC62921A0714F300E40E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62901A0714F300E40E25 /* Main.storyboard */; };
 		30DC62941A0714F300E40E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62931A0714F300E40E25 /* Images.xcassets */; };
 		30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62951A0714F300E40E25 /* LaunchScreen.xib */; };
 		30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4961A0873F200139D7D /* LoginViewController.swift */; };
-		30E2D4991A087FF900139D7D /* DUSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */; };
 		30FD987B1A0FC3D400610205 /* DualsHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092831A0B3742004DF9C9 /* DualsHttpClient.swift */; };
 		30FD987D1A0FF61A00610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
 		30FD987E1A0FF70000610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
@@ -81,6 +82,8 @@
 		305092831A0B3742004DF9C9 /* DualsHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClient.swift; path = Src/Services/DualsHttpClient.swift; sourceTree = "<group>"; };
 		305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualsHttpClientTests.swift; sourceTree = "<group>"; };
 		306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClientError.swift; path = Src/Models/DualsHttpClientError.swift; sourceTree = "<group>"; };
+		30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateLadderViewController.swift; path = Src/Views/CreateLadderViewController.swift; sourceTree = "<group>"; };
+		30D5FF231A24009F00B167B7 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummaryViewController.swift; path = Src/Views/SummaryViewController.swift; sourceTree = "<group>"; };
 		30DC62871A0714F300E40E25 /* Duals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC628B1A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DC628C1A0714F300E40E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +93,6 @@
 		30DC629C1A0714F300E40E25 /* DualsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC62A11A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30E2D4961A0873F200139D7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Src/Views/LoginViewController.swift; sourceTree = "<group>"; };
-		30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DUSummaryViewController.swift; path = Src/Views/DUSummaryViewController.swift; sourceTree = "<group>"; };
 		30FD987C1A0FF61A00610205 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Src/Models/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,8 +229,9 @@
 		30E2D4951A0873AA00139D7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30D5FF231A24009F00B167B7 /* SummaryViewController.swift */,
 				30E2D4961A0873F200139D7D /* LoginViewController.swift */,
-				30E2D4981A087FF900139D7D /* DUSummaryViewController.swift */,
+				30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -362,10 +365,11 @@
 				305092781A0B251B004DF9C9 /* Router.swift in Sources */,
 				30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */,
 				30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */,
+				30D5FF211A23FD9400B167B7 /* CreateLadderViewController.swift in Sources */,
 				301D34DA1A0F36B2009004EA /* SwiftyJSON.swift in Sources */,
-				30E2D4991A087FF900139D7D /* DUSummaryViewController.swift in Sources */,
 				30FD987D1A0FF61A00610205 /* User.swift in Sources */,
 				306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */,
+				30D5FF241A24009F00B167B7 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
