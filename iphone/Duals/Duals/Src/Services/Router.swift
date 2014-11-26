@@ -16,12 +16,15 @@ enum Router : URLRequestConvertible {
     
     case SignUp([String: AnyObject])
     case AuthenticateUser([String: AnyObject])
+    case CreateLadder([String: AnyObject])
     
     var method: Alamofire.Method {
         switch self {
         case .SignUp:
             return .POST
         case .AuthenticateUser:
+            return .POST
+        case .CreateLadder:
             return .POST
         }
     }
@@ -32,6 +35,8 @@ enum Router : URLRequestConvertible {
             return "/users"
         case .AuthenticateUser:
             return "/users/authenticate"
+        case .CreateLadder:
+            return "/ladders"
         }
     }
     
@@ -43,13 +48,15 @@ enum Router : URLRequestConvertible {
         mutableURLRequest.HTTPMethod = method.rawValue
         
         if let token = Router.OAuthToken {
-            mutableURLRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            mutableURLRequest.setValue("\(token)", forHTTPHeaderField: "Authorization")
         }
         
         switch self {
         case .SignUp(let parameters):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
         case .AuthenticateUser(let parameters):
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
+        case .CreateLadder(let parameters):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
         default:
             return mutableURLRequest

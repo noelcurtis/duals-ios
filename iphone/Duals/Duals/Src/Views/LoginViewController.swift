@@ -53,7 +53,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         dualsHttpClient.authenticateUser(userAuthParameters, { (user, error) -> Void in
             if let foundUser = user {
-                // perform seague
                 self.performSegueWithIdentifier("loginToSummaryScreen", sender: self)
             } else {
                 self.loginErrorAnimation()

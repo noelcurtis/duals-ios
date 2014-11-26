@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		301D34DA1A0F36B2009004EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D34D91A0F36B2009004EA /* SwiftyJSON.swift */; };
+		302137711A2558600030480B /* LadderSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302137701A2558600030480B /* LadderSummary.swift */; };
+		302137721A2558600030480B /* LadderSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302137701A2558600030480B /* LadderSummary.swift */; };
 		305092761A0B20E8004DF9C9 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 305092701A0B1E1D004DF9C9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		305092781A0B251B004DF9C9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092771A0B251B004DF9C9 /* Router.swift */; };
 		3050927A1A0B2B3E004DF9C9 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092791A0B2B3E004DF9C9 /* RouterTests.swift */; };
@@ -77,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		301D34D91A0F36B2009004EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Frameworks/SwiftlyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		302137701A2558600030480B /* LadderSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LadderSummary.swift; path = Src/Models/LadderSummary.swift; sourceTree = "<group>"; };
 		3050926A1A0B1E1C004DF9C9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		305092771A0B251B004DF9C9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Src/Services/Router.swift; sourceTree = "<group>"; };
 		305092791A0B2B3E004DF9C9 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 			children = (
 				30FD987C1A0FF61A00610205 /* User.swift */,
 				306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */,
+				302137701A2558600030480B /* LadderSummary.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -369,6 +373,7 @@
 				30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */,
 				30DC628D1A0714F300E40E25 /* AppDelegate.swift in Sources */,
 				30D5FF211A23FD9400B167B7 /* CreateLadderViewController.swift in Sources */,
+				302137711A2558600030480B /* LadderSummary.swift in Sources */,
 				30D5FF291A24BBA300B167B7 /* CreateLadderCell.swift in Sources */,
 				301D34DA1A0F36B2009004EA /* SwiftyJSON.swift in Sources */,
 				30FD987D1A0FF61A00610205 /* User.swift in Sources */,
@@ -381,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302137721A2558600030480B /* LadderSummary.swift in Sources */,
 				305092891A0B3EEF004DF9C9 /* DualsHttpClientTests.swift in Sources */,
 				3050927A1A0B2B3E004DF9C9 /* RouterTests.swift in Sources */,
 				30FD987E1A0FF70000610205 /* User.swift in Sources */,

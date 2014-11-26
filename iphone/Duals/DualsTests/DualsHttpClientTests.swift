@@ -17,6 +17,7 @@ class DualsHttpClientTests : XCTestCase {
     override func setUp() {
         super.setUp()
         Router.baseURLString = "http://localhost:9000"
+        Router.OAuthToken = "e9c5c331-4189-42a0-a2e6-601a6292c5cb"
     }
     
     override func tearDown() {
@@ -72,5 +73,22 @@ class DualsHttpClientTests : XCTestCase {
             XCTAssertNil(error, "\(error)")
         }
     }
+    
+    func test_CreateLadder_Success() {
+        let createLadderParameters = ["name" : "A test ladder", "activity" : "table tennis"]
+        let expectation = expectationWithDescription("Authenticate user")
+        
+        dualsHttpClient.createLadder(createLadderParameters, completionHandler:{
+            (ladderSummary, error) in
+                expectation.fulfill()
+                XCTAssertNotNil(ladderSummary, "ladder summary should not be nil")
+                XCTAssertNil(error, "error should be nil")
+        })
+        
+        waitForExpectationsWithTimeout(10) { (error) in
+            XCTAssertNil(error, "\(error)")
+        }
+    }
+    
     
 }

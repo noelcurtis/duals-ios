@@ -11,9 +11,14 @@ import UIKit
 
 class CreateLadderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     var cancelButton: UIBarButtonItem!
     var checkButton: UIBarButtonItem!
-    @IBOutlet weak var tableView: UITableView!
+    var nameCell: CreateLadderNameCell!
+    var activityCell: CreateLadderActivityCell!
+    
+    // an instance of the http client
+    let dualsHttpClient = DualsHttpClient()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +31,10 @@ class CreateLadderViewController: UIViewController, UITableViewDelegate, UITable
         // Dispose of any resources that can be recreated.
     }
     
-    
     func setupNavBar() {
         // setup the buttons
         cancelButton = UIBarButtonItem(image: UIImage(named: "backButton"), style: UIBarButtonItemStyle.Plain, target: self, action: "dismissView")
-        checkButton = UIBarButtonItem(image: UIImage(named: "checkButton"), style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        checkButton = UIBarButtonItem(image: UIImage(named: "checkButton"), style: UIBarButtonItemStyle.Plain, target: self, action: "createLadder")
         
         // nav title image
         let navTitle = UIImage(named: "navTitle")
@@ -65,10 +69,31 @@ class CreateLadderViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if (indexPath.row == 0) {
-            return self.tableView.dequeueReusableCellWithIdentifier("nameInputCell") as UITableViewCell
+            self.nameCell = self.tableView.dequeueReusableCellWithIdentifier("nameInputCell") as CreateLadderNameCell
+            return self.nameCell
         } else {
-            return self.tableView.dequeueReusableCellWithIdentifier("activityInputCell") as UITableViewCell
+            self.activityCell = self.tableView.dequeueReusableCellWithIdentifier("activityInputCell") as CreateLadderActivityCell
+            return self.activityCell
         }
+    }
+    
+    func createLadder() {
+        let createLadderParameters = ["name" : self.nameCell.nameTextField.text!, "activity" : self.activityCell.activityTextField.text!]
+        
+        dualsHttpClient.createLadder(createLadderParameters, completionHandler:{
+            (ladderSummary, error) in
+            
+            if let summary = ladderSummary {
+                // dismiss the view controller for now
+                println("Created ladder \(summary)")
+                self.dismissViewControllerAnimated(true, completion: {})
+            }
+            
+            if let e : DualsHttpClientError = error {
+                // show the error message
+                println("Error creating ladder \(e.message)")
+            }
+        })
     }
     
 
