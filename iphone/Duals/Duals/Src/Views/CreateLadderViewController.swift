@@ -78,7 +78,23 @@ class CreateLadderViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func createLadder() {
-        let createLadderParameters = ["name" : self.nameCell.nameTextField.text!, "activity" : self.activityCell.activityTextField.text!]
+        let createLadderParameters = [
+            "name" : self.nameCell.nameTextField.text!,
+            "activity" : self.activityCell.activityTextField.text!
+        ]
+        
+        if (createLadderParameters["name"] != nil) {
+            // error name is empty
+            self.nameCell.nameLabel!.textColor = UIColor.redColor()
+            return;
+        }
+        
+        if (createLadderParameters["activity"] != nil) {
+            // error activity is empty
+            self.activityCell.nameLabel!.textColor = UIColor.redColor()
+            return;
+        }
+        
         
         dualsHttpClient.createLadder(createLadderParameters, completionHandler:{
             (ladderSummary, error) in
