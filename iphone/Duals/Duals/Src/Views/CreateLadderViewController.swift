@@ -83,13 +83,13 @@ class CreateLadderViewController: UIViewController, UITableViewDelegate, UITable
             "activity" : self.activityCell.activityTextField.text!
         ]
         
-        if (createLadderParameters["name"] != nil) {
+        if (createLadderParameters["name"] == nil) {
             // error name is empty
             self.nameCell.nameLabel!.textColor = UIColor.redColor()
             return;
         }
         
-        if (createLadderParameters["activity"] != nil) {
+        if (createLadderParameters["activity"] == nil) {
             // error activity is empty
             self.activityCell.nameLabel!.textColor = UIColor.redColor()
             return;
@@ -100,9 +100,8 @@ class CreateLadderViewController: UIViewController, UITableViewDelegate, UITable
             (ladderSummary, error) in
             
             if let summary = ladderSummary {
-                // dismiss the view controller for now
                 println("Created ladder \(summary)")
-                self.dismissViewControllerAnimated(true, completion: {})
+                self.performSegueWithIdentifier("createLadderToLadderDetail", sender: summary)
             }
             
             if let e : DualsHttpClientError = error {
