@@ -88,7 +88,12 @@ class DualsHttpClient {
                     
                 } else {
 
-                    let ladderSummary = LadderSummary(ladderId: parsedLadderId["ladderId"].stringValue, name: ladderParameters["name"]!, activity: ladderParameters["activity"]!)
+                    let ladderSummary = LadderSummary(
+                        ladderId: parsedLadderId["ladderId"].stringValue,
+                        name: ladderParameters["name"]!,
+                        activity: ladderParameters["activity"]!,
+                        creator: true
+                    )
                     completionHandler(ladderSummary: ladderSummary, error: nil)
                     
                 }
@@ -103,4 +108,36 @@ class DualsHttpClient {
         }
     }
     
+    
+    func getAllLadders(completionHandler:(ladderSummaries: [LadderSummary], error: DualsHttpClientError?) -> Void) {
+        Alamofire.request(Router.GetAllLadders()).responseJSON {
+            (request, response, JSONLadders, error) in
+            
+            if let jsonLadders: AnyObject = JSONLadders {
+                
+                let parsedLadders: JSON = JSON(jsonLadders)
+                if let error: String = parsedLadders["error"].string {
+                    
+                    println("Error getting ladders for user: \(error)")
+                    let clientError = DualsHttpClientError(jsonError: parsedLadders)
+                    completionHandler(ladderSummaries: [], error: clientError)
+                    
+                } else {
+                    
+                    var foundLadderSummaries = [LadderSummary]()
+                    for (index: String, subJson: JSON) in parsedLadders {
+                        foundLadderSummaries.append(LadderSummary(jsonLadder: subJson))
+                    }
+                    completionHandler(ladderSummaries: foundLadderSummaries, error: nil)
+                    
+                }
+                
+            } else {
+                
+                println("Error: \(error?.description)")
+                completionHandler(ladderSummaries: [LadderSummary](), error: DualsHttpClientError(message: "Could not complete request please try again.", code: 999))
+                
+            }
+        }
+    }
 }

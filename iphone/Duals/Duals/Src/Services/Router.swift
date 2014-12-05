@@ -17,6 +17,7 @@ enum Router : URLRequestConvertible {
     case SignUp([String: AnyObject])
     case AuthenticateUser([String: AnyObject])
     case CreateLadder([String: AnyObject])
+    case GetAllLadders()
     
     var method: Alamofire.Method {
         switch self {
@@ -26,6 +27,8 @@ enum Router : URLRequestConvertible {
             return .POST
         case .CreateLadder:
             return .POST
+        case .GetAllLadders:
+            return .GET
         }
     }
     
@@ -36,6 +39,8 @@ enum Router : URLRequestConvertible {
         case .AuthenticateUser:
             return "/users/authenticate"
         case .CreateLadder:
+            return "/ladders"
+        case .GetAllLadders:
             return "/ladders"
         }
     }

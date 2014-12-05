@@ -14,6 +14,7 @@ import Alamofire
 class RouterTests : XCTestCase {
     
     var userSignupParameters: [String: AnyObject]?
+    var createLadderParameters: [String: AnyObject]?
     
     override func setUp() {
         super.setUp()
@@ -21,6 +22,7 @@ class RouterTests : XCTestCase {
         Router.OAuthToken = "1234"
         
         userSignupParameters = ["email": "foo@bar.com", "password" : "foobar", "firstName": "foo", "lastName": "bar"]
+        createLadderParameters = ["name" : "test", "activity" : "test"]
     }
     
     override func tearDown() {
@@ -43,5 +45,17 @@ class RouterTests : XCTestCase {
         let urlRequestWrapper = Router.AuthenticateUser(userSignupParameters!)
         XCTAssertEqual(urlRequestWrapper.path, "/users/authenticate", "Authenticate url is correct")
         XCTAssertEqual(urlRequestWrapper.method, Alamofire.Method.POST, "Authenticate method is correct")
+    }
+    
+    func test_CreateLadder_Success() {
+        let urlRequestWrapper = Router.CreateLadder(createLadderParameters!)
+        XCTAssertEqual(urlRequestWrapper.path, "/ladders", "Authenticate url is correct")
+        XCTAssertEqual(urlRequestWrapper.method, Alamofire.Method.POST, "Authenticate method is correct")
+    }
+    
+    func test_GetAllLadders_Success() {
+        let urlRequestWrapper = Router.GetAllLadders()
+        XCTAssertEqual(urlRequestWrapper.path, "/ladders", "Authenticate url is correct")
+        XCTAssertEqual(urlRequestWrapper.method, Alamofire.Method.GET, "Authenticate method is correct")
     }
 }

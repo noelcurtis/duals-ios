@@ -17,78 +17,60 @@ class DualsHttpClientTests : XCTestCase {
     override func setUp() {
         super.setUp()
         Router.baseURLString = "http://localhost:9000"
-        Router.OAuthToken = "e9c5c331-4189-42a0-a2e6-601a6292c5cb"
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func test_SignUpUser_Success() {
-        let userSignupParameters = ["email": "foo@bar.com", "password" : "foobar", "firstName": "foo", "lastName": "bar"]
-        let expectation = expectationWithDescription("Sign up a user")
-        
-        dualsHttpClient.signUpUser(userSignupParameters, completionHandler:{
-            (user, error) in
-                expectation.fulfill()
-                XCTAssertNotNil(user, "User should not be nil")
-                XCTAssertNil(error, "error should be nil")
-            }
-        )
-        
-        waitForExpectationsWithTimeout(10) { (error) in
-            XCTAssertNil(error, "\(error)")
-        }
-    }
+//    func test_SignUpUser_Success() {
+//        let userSignupParameters = ["email": "foo@bar.com", "password" : "foobar", "firstName": "foo", "lastName": "bar"]
+//        let expectation = expectationWithDescription("Sign up a user")
+//        
+//        dualsHttpClient.signUpUser(userSignupParameters, completionHandler:{
+//            (user, error) in
+//                expectation.fulfill()
+//                XCTAssertNotNil(user, "User should not be nil")
+//                XCTAssertNil(error, "error should be nil")
+//            }
+//        )
+//        
+//        waitForExpectationsWithTimeout(10) { (error) in
+//            XCTAssertNil(error, "\(error)")
+//        }
+//    }
+//    
+//    func test_SignUpUser_Failure() {
+//        let userSignupParameters = ["email": "ar_asdfdf", "password" : "foobar", "firstName": "foo", "lastName": "bar"]
+//        let expectation = expectationWithDescription("Sign up a user")
+//        
+//        dualsHttpClient.signUpUser(userSignupParameters, completionHandler:{
+//            (user, error) in
+//            expectation.fulfill()
+//            XCTAssertNil(user, "User should be nil")
+//            XCTAssertNotNil(error, "error should not be nil")
+//            }
+//        )
+//        
+//        waitForExpectationsWithTimeout(10) { (error) in
+//            XCTAssertNil(error, "\(error)")
+//        }
+//    }
     
-    func test_SignUpUser_Failure() {
-        let userSignupParameters = ["email": "ar_asdfdf", "password" : "foobar", "firstName": "foo", "lastName": "bar"]
-        let expectation = expectationWithDescription("Sign up a user")
-        
-        dualsHttpClient.signUpUser(userSignupParameters, completionHandler:{
-            (user, error) in
-            expectation.fulfill()
-            XCTAssertNil(user, "User should be nil")
-            XCTAssertNotNil(error, "error should not be nil")
-            }
-        )
-        
-        waitForExpectationsWithTimeout(10) { (error) in
-            XCTAssertNil(error, "\(error)")
-        }
-    }
-    
-    func test_AuthenticateUser_Success() {
-        let userAuthParameters = ["email": "foo@bar.com", "password" : "foobar"]
-        let expectation = expectationWithDescription("Authenticate user")
-        
-        dualsHttpClient.authenticateUser(userAuthParameters, completionHandler:{
-            (user, error) in
-                expectation.fulfill()
-                XCTAssertNotNil(user, "User should not be nil")
-                XCTAssertNil(error, "error should be nil")
-        })
-        
-        waitForExpectationsWithTimeout(10) { (error) in
-            XCTAssertNil(error, "\(error)")
-        }
-    }
-    
-    func test_CreateLadder_Success() {
-        let createLadderParameters = ["name" : "A test ladder", "activity" : "table tennis"]
-        let expectation = expectationWithDescription("Authenticate user")
-        
-        dualsHttpClient.createLadder(createLadderParameters, completionHandler:{
-            (ladderSummary, error) in
-                expectation.fulfill()
-                XCTAssertNotNil(ladderSummary, "ladder summary should not be nil")
-                XCTAssertNil(error, "error should be nil")
-        })
-        
-        waitForExpectationsWithTimeout(10) { (error) in
-            XCTAssertNil(error, "\(error)")
-        }
-    }
-    
+//    func test_AuthenticateUser_Success() {
+//        let userAuthParameters = ["email": "foo@bar.com", "password" : "foobar"]
+//        let expectation = expectationWithDescription("Authenticate user")
+//        
+//        dualsHttpClient.authenticateUser(userAuthParameters, completionHandler:{
+//            (user, error) in
+//                expectation.fulfill()
+//                XCTAssertNotNil(user, "User should not be nil")
+//                XCTAssertNil(error, "error should be nil")
+//        })
+//        
+//        waitForExpectationsWithTimeout(10) { (error) in
+//            XCTAssertNil(error, "\(error)")
+//        }
+//    }
     
 }

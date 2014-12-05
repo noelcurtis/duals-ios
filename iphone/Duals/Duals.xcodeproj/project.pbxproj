@@ -18,6 +18,7 @@
 		305092891A0B3EEF004DF9C9 /* DualsHttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */; };
 		306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
 		306D45BD1A11B05C0048690C /* DualsHttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */; };
+		30C22B451A316733003D0140 /* DualsHttpClientTestsMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C22B441A316733003D0140 /* DualsHttpClientTestsMore.swift */; };
 		30D5FF211A23FD9400B167B7 /* CreateLadderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */; };
 		30D5FF241A24009F00B167B7 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF231A24009F00B167B7 /* SummaryViewController.swift */; };
 		30D5FF291A24BBA300B167B7 /* CreateLadderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */; };
@@ -86,6 +87,7 @@
 		305092831A0B3742004DF9C9 /* DualsHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClient.swift; path = Src/Services/DualsHttpClient.swift; sourceTree = "<group>"; };
 		305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualsHttpClientTests.swift; sourceTree = "<group>"; };
 		306D45BA1A11AE4A0048690C /* DualsHttpClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualsHttpClientError.swift; path = Src/Models/DualsHttpClientError.swift; sourceTree = "<group>"; };
+		30C22B441A316733003D0140 /* DualsHttpClientTestsMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualsHttpClientTestsMore.swift; sourceTree = "<group>"; };
 		30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateLadderViewController.swift; path = Src/Views/CreateLadderViewController.swift; sourceTree = "<group>"; };
 		30D5FF231A24009F00B167B7 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummaryViewController.swift; path = Src/Views/SummaryViewController.swift; sourceTree = "<group>"; };
 		30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateLadderCell.swift; path = Src/Views/CreateLadderCell.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				305092881A0B3EEF004DF9C9 /* DualsHttpClientTests.swift */,
+				30C22B441A316733003D0140 /* DualsHttpClientTestsMore.swift */,
 				305092791A0B2B3E004DF9C9 /* RouterTests.swift */,
 				30DC62A01A0714F300E40E25 /* Supporting Files */,
 			);
@@ -386,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C22B451A316733003D0140 /* DualsHttpClientTestsMore.swift in Sources */,
 				302137721A2558600030480B /* LadderSummary.swift in Sources */,
 				305092891A0B3EEF004DF9C9 /* DualsHttpClientTests.swift in Sources */,
 				3050927A1A0B2B3E004DF9C9 /* RouterTests.swift in Sources */,
