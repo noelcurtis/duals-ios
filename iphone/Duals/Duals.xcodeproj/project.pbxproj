@@ -27,6 +27,8 @@
 		30DC62921A0714F300E40E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62901A0714F300E40E25 /* Main.storyboard */; };
 		30DC62941A0714F300E40E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62931A0714F300E40E25 /* Images.xcassets */; };
 		30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30DC62951A0714F300E40E25 /* LaunchScreen.xib */; };
+		30E051C11A3FCEB600B6BABC /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30E051C01A3FCEB600B6BABC /* LoadingView.xib */; };
+		30E051C41A3FCFD300B6BABC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E051C31A3FCFD300B6BABC /* LoadingView.swift */; };
 		30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4961A0873F200139D7D /* LoginViewController.swift */; };
 		30FD987B1A0FC3D400610205 /* DualsHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092831A0B3742004DF9C9 /* DualsHttpClient.swift */; };
 		30FD987D1A0FF61A00610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
@@ -101,6 +103,8 @@
 		30DC62961A0714F300E40E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		30DC629C1A0714F300E40E25 /* DualsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC62A11A0714F300E40E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E051C01A3FCEB600B6BABC /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingView.xib; path = Src/Views/LoadingView.xib; sourceTree = "<group>"; };
+		30E051C31A3FCFD300B6BABC /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Src/Views/LoadingView.swift; sourceTree = "<group>"; };
 		30E2D4961A0873F200139D7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Src/Views/LoginViewController.swift; sourceTree = "<group>"; };
 		30FD987C1A0FF61A00610205 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Src/Models/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +227,7 @@
 				30DC62901A0714F300E40E25 /* Main.storyboard */,
 				30DC62931A0714F300E40E25 /* Images.xcassets */,
 				30DC62951A0714F300E40E25 /* LaunchScreen.xib */,
+				30E051C01A3FCEB600B6BABC /* LoadingView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				30D5FF201A23FD9400B167B7 /* CreateLadderViewController.swift */,
 				30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */,
 				30947DF11A37D93400F7E98F /* SummaryCell.swift */,
+				30E051C31A3FCFD300B6BABC /* LoadingView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DC62921A0714F300E40E25 /* Main.storyboard in Resources */,
+				30E051C11A3FCEB600B6BABC /* LoadingView.xib in Resources */,
 				30DC62971A0714F300E40E25 /* LaunchScreen.xib in Resources */,
 				30DC62941A0714F300E40E25 /* Images.xcassets in Resources */,
 			);
@@ -385,6 +392,7 @@
 				30FD987D1A0FF61A00610205 /* User.swift in Sources */,
 				306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */,
 				30947DF21A37D93400F7E98F /* SummaryCell.swift in Sources */,
+				30E051C41A3FCFD300B6BABC /* LoadingView.swift in Sources */,
 				30D5FF241A24009F00B167B7 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

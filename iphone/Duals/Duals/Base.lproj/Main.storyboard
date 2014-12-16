@@ -383,6 +383,7 @@
                     <navigationItem key="navigationItem" id="dRG-xb-YWH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="baseView" destination="PHw-lk-5vb" id="mhS-Kn-sR9"/>
                         <outlet property="tableView" destination="mQL-Uy-Dh7" id="wQn-ZZ-aHh"/>
                         <segue destination="ktQ-dI-kIh" kind="modal" identifier="summaryToCreateLadder" id="M3d-yu-gQb"/>
                     </connections>

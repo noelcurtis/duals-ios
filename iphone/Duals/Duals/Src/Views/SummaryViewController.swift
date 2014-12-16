@@ -10,16 +10,19 @@ import UIKit
 
 class SummaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var baseView: UIView!
     var menuButton: UIBarButtonItem!
     var addButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var ladderSummaryArray: [LadderSummary] = []
+    var loadingView: LoadingView!
     
     // an instance of the http client
     let dualsHttpClient = DualsHttpClient()
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLoadingVew()
         setupNavBar()
         populateUserLadders()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +31,17 @@ class SummaryViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setupLoadingVew() {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        var view = bundle.loadNibNamed("LoadingView", owner: nil, options: nil)[0] as LoadingView
+        self.loadingView = view
+        self.loadingView.hidden = true
+        
+        // place the loading view
+        
+        self.baseView.insertSubview(self.loadingView, atIndex: 3)
     }
     
     func setupNavBar() {
@@ -39,6 +53,7 @@ class SummaryViewController: UIViewController, UITableViewDelegate, UITableViewD
         let navTitle = UIImage(named: "navTitle")
         let navTitleView = UIImageView(image: navTitle)
         self.navigationItem.titleView = navTitleView
+        self.navigationItem.titleView?.hidden = true
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationItem.leftBarButtonItem = menuButton
         self.navigationItem.rightBarButtonItem = addButton
@@ -73,12 +88,24 @@ class SummaryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func populateUserLadders() {
+        self.loadingView.hidden = false
+        self.loadingView.startAnimating()
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.rightBarButtonItem = nil
         dualsHttpClient.getAllLadders({(userLadders, error) -> Void in
             if let foundError = error{
                 // show an error because something did not work
             } else {
                 self.ladderSummaryArray = userLadders
+                
                 self.tableView.reloadData()
+                
+                // show the buttons and hide the loading view
+                self.loadingView.stopAnimating()
+                self.loadingView.hidden = true
+                self.navigationItem.leftBarButtonItem = self.menuButton
+                self.navigationItem.rightBarButtonItem = self.addButton
+                self.navigationItem.titleView?.hidden = false
             }
         })
     }
