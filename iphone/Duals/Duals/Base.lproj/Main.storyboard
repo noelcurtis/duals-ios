@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -237,12 +237,12 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="35h-KY-034">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="146" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mQL-Uy-Dh7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="146" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mQL-Uy-Dh7">
                                 <rect key="frame" x="0.0" y="64" width="382" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="146" id="6Lj-CV-FJl">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="146" id="6Lj-CV-FJl" customClass="SummaryCell" customModule="Duals" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Lj-CV-FJl" id="OdQ-ZU-Nwy">
@@ -297,8 +297,15 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="activityLabel" destination="15e-GD-sJD" id="FXu-OB-Yiz"/>
+                                            <outlet property="ladderNameLabel" destination="ieR-uz-oZG" id="7cX-Q7-GqX"/>
+                                            <outlet property="rankLabel" destination="NBV-QS-l1l" id="e2D-sd-30u"/>
+                                            <outlet property="scheduledMatchCountLabel" destination="wl3-Ml-5sP" id="05H-QJ-J6v"/>
+                                            <outlet property="winsLabel" destination="obL-6w-wtx" id="X3R-x3-8nl"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCellWithNotification" rowHeight="146" id="UNq-6G-uir">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCellWithNotification" rowHeight="146" id="UNq-6G-uir" customClass="SummaryNotificationCell" customModule="Duals" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UNq-6G-uir" id="Wzp-aU-epm">
@@ -356,8 +363,19 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="activityLabel" destination="gC8-EA-GuD" id="Ohs-uS-BgT"/>
+                                            <outlet property="ladderNameLabel" destination="KWi-4H-GQ3" id="USj-J2-5Gy"/>
+                                            <outlet property="rankLabel" destination="3JS-pX-QZy" id="AuW-Wp-AEx"/>
+                                            <outlet property="scheduledMatchCountLabel" destination="GcD-g8-ZHA" id="DtQ-a4-sXA"/>
+                                            <outlet property="winsLabel" destination="x0e-jV-8em" id="29V-HV-OcN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Ma-Vw-erl" id="J6Z-HY-lmt"/>
+                                    <outlet property="delegate" destination="4Ma-Vw-erl" id="Ajb-Fg-lC7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -365,6 +383,7 @@
                     <navigationItem key="navigationItem" id="dRG-xb-YWH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="tableView" destination="mQL-Uy-Dh7" id="wQn-ZZ-aHh"/>
                         <segue destination="ktQ-dI-kIh" kind="modal" identifier="summaryToCreateLadder" id="M3d-yu-gQb"/>
                     </connections>
                 </viewController>

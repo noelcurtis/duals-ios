@@ -8,14 +8,20 @@
 
 import UIKit
 
-class SummaryViewController: UIViewController {
+class SummaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var menuButton: UIBarButtonItem!
     var addButton: UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
+    var ladderSummaryArray: [LadderSummary] = []
+    
+    // an instance of the http client
+    let dualsHttpClient = DualsHttpClient()
  
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
+        populateUserLadders()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -47,5 +53,33 @@ class SummaryViewController: UIViewController {
     func performCreateLadderSeague() {
         self.performSegueWithIdentifier("summaryToCreateLadder", sender: self)
     }
-
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    // MARK: - UITableViewDatasource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.ladderSummaryArray.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let summaryCell : SummaryCell = self.tableView.dequeueReusableCellWithIdentifier("summaryCell") as SummaryCell
+        summaryCell.setupWithLadderSummary(self.ladderSummaryArray[indexPath.row])
+        return summaryCell
+    }
+    
+    func populateUserLadders() {
+        dualsHttpClient.getAllLadders({(userLadders, error) -> Void in
+            if let foundError = error{
+                // show an error because something did not work
+            } else {
+                self.ladderSummaryArray = userLadders
+                self.tableView.reloadData()
+            }
+        })
+    }
 }
