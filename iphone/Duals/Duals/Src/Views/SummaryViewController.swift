@@ -39,9 +39,13 @@ class SummaryViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.loadingView = view
         self.loadingView.hidden = true
         
-        // place the loading view
-        
         self.baseView.insertSubview(self.loadingView, atIndex: 3)
+        
+        // place the loading view
+        self.loadingView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        // add the layout constraints to center the loading view in its parent view horizontially and vertically
+        self.baseView.addConstraint(NSLayoutConstraint(item: self.loadingView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.baseView, attribute: NSLayoutAttribute.CenterX, multiplier: 0.75, constant: 0))
+        self.baseView.addConstraint(NSLayoutConstraint(item: self.loadingView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.baseView, attribute: NSLayoutAttribute.CenterY, multiplier: 0.75, constant: 0))
     }
     
     func setupNavBar() {
