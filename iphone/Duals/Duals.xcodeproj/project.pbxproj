@@ -30,6 +30,7 @@
 		30E051C11A3FCEB600B6BABC /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30E051C01A3FCEB600B6BABC /* LoadingView.xib */; };
 		30E051C41A3FCFD300B6BABC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E051C31A3FCFD300B6BABC /* LoadingView.swift */; };
 		30E2D4971A0873F200139D7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2D4961A0873F200139D7D /* LoginViewController.swift */; };
+		30F3A0311A4F789C00BD2974 /* LadderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3A0301A4F789C00BD2974 /* LadderDetailViewController.swift */; };
 		30FD987B1A0FC3D400610205 /* DualsHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305092831A0B3742004DF9C9 /* DualsHttpClient.swift */; };
 		30FD987D1A0FF61A00610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
 		30FD987E1A0FF70000610205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD987C1A0FF61A00610205 /* User.swift */; };
@@ -106,6 +107,7 @@
 		30E051C01A3FCEB600B6BABC /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingView.xib; path = Src/Views/LoadingView.xib; sourceTree = "<group>"; };
 		30E051C31A3FCFD300B6BABC /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Src/Views/LoadingView.swift; sourceTree = "<group>"; };
 		30E2D4961A0873F200139D7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Src/Views/LoginViewController.swift; sourceTree = "<group>"; };
+		30F3A0301A4F789C00BD2974 /* LadderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LadderDetailViewController.swift; path = Src/Views/LadderDetailViewController.swift; sourceTree = "<group>"; };
 		30FD987C1A0FF61A00610205 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Src/Models/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +253,7 @@
 				30D5FF281A24BBA300B167B7 /* CreateLadderCell.swift */,
 				30947DF11A37D93400F7E98F /* SummaryCell.swift */,
 				30E051C31A3FCFD300B6BABC /* LoadingView.swift */,
+				30F3A0301A4F789C00BD2974 /* LadderDetailViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				306D45BB1A11AE4A0048690C /* DualsHttpClientError.swift in Sources */,
 				30947DF21A37D93400F7E98F /* SummaryCell.swift in Sources */,
 				30E051C41A3FCFD300B6BABC /* LoadingView.swift in Sources */,
+				30F3A0311A4F789C00BD2974 /* LadderDetailViewController.swift in Sources */,
 				30D5FF241A24009F00B167B7 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

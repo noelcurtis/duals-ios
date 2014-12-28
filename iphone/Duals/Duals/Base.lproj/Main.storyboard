@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="1506.5" y="-413.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Ladder Detail View Controller-->
         <scene sceneID="lW0-Ih-UsP">
             <objects>
-                <viewController id="FTo-qV-3xI" sceneMemberID="viewController">
+                <viewController id="FTo-qV-3xI" customClass="LadderDetailViewController" customModule="Duals" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RJo-ig-6Yo"/>
                         <viewControllerLayoutGuide type="bottom" id="JQl-eC-2N8"/>
@@ -213,6 +213,10 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DcY-Ez-SI3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-rw-uf3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
