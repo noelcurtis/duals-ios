@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LadderDetailViewController: UIViewController {
+class LadderDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     var cancelButton: UIBarButtonItem!
@@ -44,5 +44,22 @@ class LadderDetailViewController: UIViewController {
     func dismissView() {
         self.dismissViewControllerAnimated(true, completion: {})
     }
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    // MARK: - UITableViewDatasource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return self.tableView.dequeueReusableCellWithIdentifier("buttonGroupSchedule") as UITableViewCell
+    }
+    
     
 }
